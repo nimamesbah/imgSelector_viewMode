@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="w-20 h-20 overflow-hidden border border-black relative">
+        <button class="absolute left-[18px] bottom-0 z-50" onclick="switchMode()">switch</button>
+        <div class="flex flex-col justify-between items-center duration-300 h-32 ">
+            <img class="w-9" src="./images/moon-stars-svgrepo-com.svg" alt="">
+            <img class="w-9" src="./images/sun-svgrepo-com.svg" alt="">
+            
+
+            
+        </div>
+    </div>
+    <div class="mx-auto w-4/5 flex flex-col justify-center items-center gap-7 mt-32">
+        <img class="border-[2px] w-96 h-64" src="" alt="your selected images" width="300px" height="300px" id="imgMain" >
+        <div class="flex justify-between items-center gap-4">
+            <img onclick="borderImg1()" class="p-2 border cursor-pointer" width="50px" src="./images/brad-pitt.webp" alt="" id="imgBtn1">
+            <img onclick="borderImg2()" class="p-2 border cursor-pointer" width="50px" src="./images/fight-club-main-1575992047.jpg" alt="" id="imgBtn2">
+            <img onclick="borderImg3()" class="p-2 border cursor-pointer" width="50px" src="./images/killing-them-softly-1-765010a9c4584f23ab936f462101f4c1.jpg" alt="" id="imgBtn3">
+            <img onclick="borderImg4()" class="p-2 border cursor-pointer" width="50px" src="./images/Wolfs-Brad-Pitt-Movie.webp" alt="" id="imgBtn4">
+        </div>
+    </div>
+    
+</body>
+</html>
